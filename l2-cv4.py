@@ -10,7 +10,7 @@ heslo = getpass("Zadej heslo: ")
 # at je vystup lepe videt
 print("========")
 
-
+'''
 if uzivatel in passwords:
     #heslo_ulozene = passwords[uzivatel]
     if heslo == passwords[uzivatel]:
@@ -18,5 +18,12 @@ if uzivatel in passwords:
     else:
         # tohle je jen pro účely učení, bezpečnostní pravidlo je dát stejnou hlášku jako v případě ne-existujícího uživatele
         print(">> Špatné heslo")
+else:
+    print(">> Neznámý uživatel")
+'''
+
+## a mozna uplne nejelegantnejsi reseni
+if uzivatel in passwords and heslo == passwords[uzivatel]:
+    print(">> Smíš vstoupit.")
 else:
     print(">> Neznámý uživatel")
