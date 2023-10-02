@@ -23,6 +23,5 @@ for polozka, mnozstvi, cena in recept['ingredience']:
     suma=suma+cena
     # print(cena)
 #print(suma)
-suma=round(suma)
-suma=int(suma)
+suma=int(round(suma))
 print(f"Celkové náklady surovin receptu: {suma} Kč.")
