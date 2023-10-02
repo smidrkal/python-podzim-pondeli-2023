@@ -23,3 +23,16 @@ if produkt in pekarna: # produkt je v pekarne = klic je ve slovniku
     print(f"{produkt} stojí {pekarna[produkt]} korun.")
 else: # produkt neni v pekarne = klic není ve slovniku
     print(f"Bohužel, produkt {produkt} neprodáváme.")
+
+
+# pridani jednoho zaznamu
+pekarna["zavin"] = 30
+pekarna["muffin"] = 15
+# uprava zaznamu
+pekarna["houska"] = 15
+# odebrani zaznamu
+# !ale muzu si pred tim hodnotu ze slovniku ulozit do promene:
+cena_muffinu = pekarna.pop("muffin")
+
+print(pekarna)
+print(cena_muffinu)
