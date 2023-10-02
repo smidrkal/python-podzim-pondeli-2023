@@ -3,9 +3,14 @@
 passwords = {"Jiří": "tajne-heslo", "Natálie": "jeste-tajnejsi-heslo", "Klára": "nejtajnejsi-heslo"}
 
 uzivatel = input("Zadej uživatele: ")
+# nechci zobrazovat zadane znaky
 from getpass import getpass
 heslo = getpass("Zadej heslo: ")
+
+# at je vystup lepe videt
 print("========")
+
+
 if uzivatel in passwords:
     #heslo_ulozene = passwords[uzivatel]
     if heslo == passwords[uzivatel]:
