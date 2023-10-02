@@ -5,13 +5,13 @@ passwords = {"Jiří": "tajne-heslo", "Natálie": "jeste-tajnejsi-heslo", "Klár
 uzivatel = input("Zadej uživatele: ")
 from getpass import getpass
 heslo = getpass("Zadej heslo: ")
-
+print("========")
 if uzivatel in passwords:
     #heslo_ulozene = passwords[uzivatel]
     if heslo == passwords[uzivatel]:
-        print("Smíš vstoupit.")
+        print(">> Smíš vstoupit.")
     else:
         # tohle je jen pro účely učení, bezpečnostní pravidlo je dát stejnou hlášku jako v případě ne-existujícího uživatele
-        print("Špatné heslo")
+        print(">> Špatné heslo")
 else:
-    print("Neznámý uživatel")
+    print(">> Neznámý uživatel")
