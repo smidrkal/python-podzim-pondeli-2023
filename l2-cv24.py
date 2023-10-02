@@ -25,3 +25,13 @@ for polozka, mnozstvi, cena in recept['ingredience']:
 #print(suma)
 suma=int(round(suma))
 print(f"Celkové náklady surovin receptu: {suma} Kč.")
+
+print("....lepši řešení")
+# --- a nebo mnohem jednodušeji
+celkem = 0
+for ingredience in recept['ingredience']:
+    cena_text = ingredience[-1]
+    cena = float(cena_text.split(' ')[0])
+    celkem += cena
+
+print(f'recept stojí celkem {celkem} Kč')
