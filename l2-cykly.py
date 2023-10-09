@@ -14,9 +14,11 @@ print(sales.keys())
 
 # jake jsou hodnoty ve slovniku?
 print(sales.values())
+## pokud se nenapise nic, prochazeji se keys: for polozka in sales:
 
 # kolik se prumerne prodalo vytisku na knihu?
 print(sum(sales.values())/len(sales))
 
 for nazev, prodano in sales.items():
     print(f"Kniha s názvem {nazev} se prodalo {prodano} ks.")
+    

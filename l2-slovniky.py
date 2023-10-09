@@ -11,6 +11,7 @@ print(pekarna)
 print(pekarna["houska"])
 klic = "rohlik"
 print(f"klic: {klic}, hodnota: {pekarna[klic]}")
+### vysvetleni f-stringu: https://kodim.cz/programovani/uvod-do-progr-1/prvni-krucky/vstup-vystup/cteni-z-terminalu
 
 ##
 produkt = input("Zadej produkt: ")

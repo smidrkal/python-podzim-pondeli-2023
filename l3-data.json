@@ -1,0 +1,33 @@
+[{
+    "name": "Brněnská 11",
+    "brewery": ["Parní pivovar Hauskrecht"],
+    "type": "Pale Lager",
+    "IBU": 38,
+    "ABV": 4.5,
+    "count": 25,
+    "is_tasty": false
+},
+{
+    "name": "Brněnská 11",
+    "brewery": ["Parní pivovar Hauskrecht"],
+    "type": "Pale Lager",
+    "IBU": 38,
+    "ABV": 4.5,
+    "count": 25,
+    "is_tasty": false,
+    "datum": {
+        "den": 12,
+        "mesic": 3,
+        "rok": 2023
+    },
+    "date": "12/3/2023"
+},
+{
+    "name": "Brněnská 11",
+    "brewery": ["Parní pivovar Hauskrecht"],
+    "type": "Pale Lager",
+    "IBU": 38,
+    "ABV": 4.5,
+    "count": 25,
+    "is_tasty": false
+}]
