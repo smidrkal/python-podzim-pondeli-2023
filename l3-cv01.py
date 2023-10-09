@@ -1,5 +1,5 @@
 import json
-with open('l3-zavod.json', encoding='utf-8') as file:
+with open('l3-zavod.json', mode='r', encoding='utf-8') as file:
     runners = json.load(file)
 
 winner = runners[0]
@@ -25,6 +25,11 @@ Vytvoř si prázdný seznam finishers, kam budeš vkládat jména závodníků, 
 print(f"vitez je {winner['jmeno']}")
 print(f"cas ma {winner_time}")
 
+second = runners[1]
+second_time = second["casy"]["oficialni"]
+print(f"Druhy skoncil {second['jmeno']}")
+print(f"s casem {second_time}")
+
 finishers = []
 
 for finisher in runners:
@@ -35,3 +40,7 @@ for finisher in runners:
     #    print(f"{finisher['jmeno']} nedokoncil")
 
 print(f"{finishers}")
+print("Zavod dokocili:")
+
+for zavodnik in finishers:
+    print(f" - {zavodnik}")
